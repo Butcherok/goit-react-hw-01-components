@@ -1,0 +1,21 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    margin: 0 auto;
+    max-width: 480px;
+    gap: 15px;
+    background-color: white;
+}
+
+.description {
+    composes: profile;
+    gap: 5px;
+}
+.avatar {
+    width: 160px;
+    border-radius: 50%;
+    background-color: aqua;
+}

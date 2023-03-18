@@ -4,7 +4,16 @@ import user from 'data/user.json';
 // import transactions from 'data/transactions.json';
 import { Profile } from './user/Profile';
 
-
 export const App = () => {
-    return <Profile user={user} />;
+    return (
+        <Profile
+            avatar={user.avatar}
+            username={user.username}
+            tag={user.username}
+            location={user.location}
+            followers={user.stats.followers}
+            views={user.stats.views}
+            likes={user.stats.likes}
+        />
+    );
 };

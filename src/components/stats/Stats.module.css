@@ -40,7 +40,7 @@
     padding-left: 1;
     padding-right: auto;
     border: 1px solid lightgray;
-    background-color: rgb(232, 232, 232);
+    color: white;
 }
 .label {
     font-size: 18px;

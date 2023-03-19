@@ -1,9 +1,10 @@
 import user from 'data/user.json';
 import data from 'data/data.json';
-// import friends from 'data/friends.json';
+import friends from 'data/friends.json';
 // import transactions from 'data/transactions.json';
 import { Profile } from './user/Profile';
 import { Statistics } from './stats/Stats';
+import { FriendList } from './friends/FriendList';
 
 export const App = () => {
     return (
@@ -13,11 +14,10 @@ export const App = () => {
                 username={user.username}
                 tag={user.username}
                 location={user.location}
-                followers={user.stats.followers}
-                views={user.stats.views}
-                likes={user.stats.likes}
+                stats={user.stats}
             />
-            <Statistics  stats={data} />
+            <Statistics stats={data} />
+            <FriendList friends={friends} />
         </>
     );
 };

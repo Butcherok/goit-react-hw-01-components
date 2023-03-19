@@ -2,12 +2,15 @@ import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
-    // var mode = {
-    //     isOnline ? 'isOnline': 'isOffline'
-    // };
+    const mode = [css.status];
+    if (isOnline) {
+        mode.push(css.isOnline);
+    } else {
+        mode.push(css.isOffline);
+    }
     return (
         <>
-            <span className={css.status}></span>
+            <span className={mode.join(' ')}></span>
             <img
                 className={css.avatar}
                 src={avatar}

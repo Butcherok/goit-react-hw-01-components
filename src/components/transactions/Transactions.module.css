@@ -1,0 +1,76 @@
+.transaction-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+}
+.tabHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+
+    background-color: aqua;
+}
+.tabHeadList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.tabHeadItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 100%;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+.transBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+
+    background-color: white;
+}
+.transList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.transList:nth-child(2n) {
+    background-color: rgb(236, 234, 234);
+}
+.transItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+.transItem:nth-child(2n-1) {
+    border-right: 1px solid rgb(233, 233, 233);
+    border-left: 1px solid rgb(233, 233, 233);
+}
+.transItem:nth-child(2n) {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+}

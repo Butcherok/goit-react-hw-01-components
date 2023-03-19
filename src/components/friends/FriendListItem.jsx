@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
+import { FcApproval } from 'react-icons/fc';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
     const mode = [css.status];
@@ -10,7 +11,9 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
     }
     return (
         <>
-            <span className={mode.join(' ')}></span>
+            <span className={mode.join(' ')}>
+                <FcApproval size={32}/>
+            </span>
             <img
                 className={css.avatar}
                 src={avatar}
